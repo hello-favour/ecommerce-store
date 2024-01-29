@@ -3,9 +3,12 @@ import 'package:ecommerce_store/common/widgets/custom_shapes/containers/primary_
 import 'package:ecommerce_store/common/widgets/layouts/list_tiles.dart';
 import 'package:ecommerce_store/common/widgets/layouts/setting_menu_tile.dart';
 import 'package:ecommerce_store/common/widgets/texts/section_heading.dart';
+import 'package:ecommerce_store/features/personalization/screens/address/address.dart';
+import 'package:ecommerce_store/features/shop/screens/order/order.dart';
 import 'package:ecommerce_store/utils/constants/app_colors.dart';
 import 'package:ecommerce_store/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class SettingScreen extends StatelessWidget {
@@ -30,7 +33,7 @@ class SettingScreen extends StatelessWidget {
                           .apply(color: AppColors.white),
                     ),
                   ),
-                   UserProfileTitle(),
+                  const UserProfileTitle(),
                   const SizedBox(height: AppSizes.spaceBtwSections),
                 ],
               ),
@@ -47,13 +50,17 @@ class SettingScreen extends StatelessWidget {
                     title: "My Address",
                     subTitle: "Set shopping delivery address",
                     icon: Iconsax.safe_home,
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(const UserAddressScreen());
+                    },
                   ),
                   SettingMenuTile(
                     title: "My Cart",
                     subTitle: "Add remove products and move to checkout",
                     icon: Iconsax.shopping_cart,
-                    onTap: () {},
+                    onTap: () {
+                      Get.to(const OrderScreen());
+                    },
                   ),
                   SettingMenuTile(
                     title: "My Orders",
@@ -124,8 +131,8 @@ class SettingScreen extends StatelessWidget {
                   const SizedBox(height: AppSizes.spaceBtwItems),
                   SizedBox(
                     width: double.infinity,
-                    child:
-                        OutlinedButton(onPressed: () {}, child: Text("Logout")),
+                    child: OutlinedButton(
+                        onPressed: () {}, child: const Text("Logout")),
                   ),
                   const SizedBox(height: AppSizes.spaceBtwSections * 2.5),
                 ],

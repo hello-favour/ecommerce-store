@@ -100,7 +100,7 @@ class ProductAttributes extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SeactionHeading(title: "Colors", showActionButton: false),
+            const SeactionHeading(title: "Size", showActionButton: false),
             const SizedBox(height: AppSizes.spaceBtwItems / 2),
             Wrap(
               spacing: 8,

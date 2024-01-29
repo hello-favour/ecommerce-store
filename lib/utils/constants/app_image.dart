@@ -40,7 +40,7 @@ class AppImages {
   //PRODUCTS
   static const String productImage1 = "assets/images/tracksuit-blue.png";
   static const String productImage2 = "assets/images/tracksuit-black.png";
-  static const String productImage3 = "assets/images/tracksuit.png";
+  static const String productImage3 = "assets/images/tracksuit1.png";
   static const String productImage4 = "assets/images/shirt.png";
   static const String productImage5 = "assets/images/samsung.png";
   static const String productImage6 = "assets/images/samsung2.png";
@@ -64,4 +64,15 @@ class AppImages {
 
   //PROFILE
   static const String user = "assets/images/user.png";
+
+  //PAYMENT METHOD
+  static const String applePay = "assets/images/apple-pay.png";
+  static const String googlePay = "assets/images/google-pay.png";
+  static const String paytm = "assets/images/paytm.png";
+  static const String masterCard = "assets/images/master-card.png";
+  static const String creditCard = "assets/images/credit-card.png";
+  static const String visa = "assets/images/visa.png";
+  static const String succefulPaymentIcon =
+      "assets/images/successful-payment-icon.png";
+  static const String payPal = "assets/images/paypal.png";
 }

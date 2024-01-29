@@ -1,5 +1,4 @@
-
-
+import 'package:ecommerce_store/utils/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class SeactionHeading extends StatelessWidget {
@@ -10,7 +9,7 @@ class SeactionHeading extends StatelessWidget {
   const SeactionHeading({
     super.key,
     this.textColor,
-    this.showActionButton = false,
+    this.showActionButton = true,
     required this.title,
     this.buttonTitle = "View all",
     this.onPressed,
@@ -19,6 +18,7 @@ class SeactionHeading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           title,
@@ -32,7 +32,9 @@ class SeactionHeading extends StatelessWidget {
         if (showActionButton)
           TextButton(
             onPressed: onPressed,
-            child: Text(buttonTitle),
+            child: Text(
+              buttonTitle,
+            ),
           ),
       ],
     );

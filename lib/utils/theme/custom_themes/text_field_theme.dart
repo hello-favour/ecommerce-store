@@ -7,11 +7,11 @@ class APPTextFieldTheme {
     errorMaxLines: 3,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
-    labelStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    errorStyle: TextStyle().copyWith(fontStyle: FontStyle.normal),
+    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
     floatingLabelStyle:
-        TextStyle().copyWith(color: Colors.black.withOpacity(0.5)),
+        const TextStyle().copyWith(color: Colors.black.withOpacity(0.5)),
     border: const OutlineInputBorder().copyWith(
       borderRadius: BorderRadius.circular(14),
       borderSide: const BorderSide(width: 1, color: Colors.grey),

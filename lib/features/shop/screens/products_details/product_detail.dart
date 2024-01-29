@@ -1,4 +1,5 @@
 import 'package:ecommerce_store/common/widgets/texts/section_heading.dart';
+import 'package:ecommerce_store/features/shop/screens/product_reviews/product_reviews.dart';
 import 'package:ecommerce_store/features/shop/screens/products_details/widgets/bottom_add_to_cart.dart';
 import 'package:ecommerce_store/features/shop/screens/products_details/widgets/product_attributes.dart';
 import 'package:ecommerce_store/features/shop/screens/products_details/widgets/product_detail_image_slider.dart';
@@ -7,6 +8,7 @@ import 'package:ecommerce_store/features/shop/screens/products_details/widgets/r
 import 'package:ecommerce_store/utils/constants/sizes.dart';
 import 'package:ecommerce_store/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -39,8 +41,12 @@ class ProductDetail extends StatelessWidget {
                   const ProductAttributes(),
                   //CHECKOUT BUTTON
                   const SizedBox(height: AppSizes.spaceBtwItems),
-                  ElevatedButton(
-                      onPressed: () {}, child: const Text("Checkout")),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                        onPressed: () {}, child: const Text("Checkout")),
+                  ),
+                  const SizedBox(height: AppSizes.spaceBtwItems),
                   //DESCRIPTION
                   const SeactionHeading(
                     title: "Description",
@@ -64,7 +70,7 @@ class ProductDetail extends StatelessWidget {
                       const SeactionHeading(
                           title: "Review(199)", showActionButton: false),
                       IconButton(
-                          onPressed: () {},
+                          onPressed: () => Get.to(const ProductReviews()),
                           icon: const Icon(Iconsax.arrow_right_3, size: 18))
                     ],
                   ),

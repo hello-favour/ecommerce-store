@@ -16,7 +16,7 @@ class BottomAddToCart extends StatelessWidget {
           horizontal: AppSizes.defaultSpace,
           vertical: AppSizes.defaultSpace / 2),
       decoration: BoxDecoration(
-        color: dark ? AppColors.darkGrey : AppColors.light,
+        color: dark ? AppColors.light : AppColors.darkGrey,
         borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(AppSizes.cardRadiusLg),
           topRight: Radius.circular(AppSizes.cardRadiusLg),
@@ -34,12 +34,12 @@ class BottomAddToCart extends StatelessWidget {
                 height: 40,
                 color: AppColors.white,
               ),
-              const SizedBox(height: AppSizes.spaceBtwItems),
+              const SizedBox(width: AppSizes.spaceBtwItems),
               Text("2", style: Theme.of(context).textTheme.titleSmall),
-              const SizedBox(height: AppSizes.spaceBtwItems),
+              const SizedBox(width: AppSizes.spaceBtwItems),
               const CircularIcon(
                 icon: Iconsax.add,
-                backgroundColor: AppColors.darkGrey,
+                backgroundColor: AppColors.black,
                 width: 40,
                 height: 40,
                 color: AppColors.white,
