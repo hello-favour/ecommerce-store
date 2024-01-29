@@ -39,7 +39,7 @@ class ProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   const RoundedImage(
-                    imageUrl: AppImages.productImage1,
+                    imageUrl: AppImages.productImage12,
                     applyImageRadius: true,
                   ),
                   Positioned(
@@ -101,7 +101,7 @@ class ProductCardVertical extends StatelessWidget {
                     color: AppColors.dark,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(AppSizes.cardRadiusMd),
-                      bottomLeft: Radius.circular(AppSizes.productImageRadius),
+                      bottomRight: Radius.circular(AppSizes.productImageRadius),
                     ),
                   ),
                   child: const SizedBox(

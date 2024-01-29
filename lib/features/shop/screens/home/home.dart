@@ -7,11 +7,13 @@ import 'package:ecommerce_store/common/widgets/products/products_cards/product_c
 import 'package:ecommerce_store/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:ecommerce_store/common/widgets/texts/section_heading.dart';
 import 'package:ecommerce_store/features/shop/screens/home/widgets/home_slider.dart';
+import 'package:ecommerce_store/features/shop/screens/sub_category/sub_category.dart';
 import 'package:ecommerce_store/utils/constants/app_colors.dart';
 import 'package:ecommerce_store/utils/constants/app_image.dart';
 import 'package:ecommerce_store/utils/constants/sizes.dart';
 import 'package:ecommerce_store/utils/constants/text_string.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -82,7 +84,9 @@ class HomeScreen extends StatelessWidget {
                         return VerticalImageText(
                           image: AppImages.shoesIcon,
                           title: 'Shoes',
-                          onTap: () {},
+                          onTap: () {
+                            Get.to(const SubCategoriesScreen());
+                          },
                         );
                       },
                     ),
