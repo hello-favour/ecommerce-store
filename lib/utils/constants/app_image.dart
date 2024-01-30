@@ -75,4 +75,13 @@ class AppImages {
   static const String succefulPaymentIcon =
       "assets/images/successful-payment-icon.png";
   static const String payPal = "assets/images/paypal.png";
+
+  //PAYMENT METHOD
+  static const String appleBrand = "assets/images/brands/apple.png";
+  static const String acerBrand = "assets/images/brands/acer.png";
+  static const String adidasBrand = "assets/images/brands/adidas.png";
+  static const String ikeaBrand = "assets/images/brands/ikea.png";
+  static const String nikeBrand = "assets/images/brands/nike.png";
+  static const String pumaBrand = "assets/images/brands/puma.png";
+  static const String zaraBrand = "assets/images/brands/zara.png";
 }

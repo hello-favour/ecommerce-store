@@ -1,8 +1,8 @@
-
 import 'package:ecommerce_store/common/styles/rounded_container.dart';
 import 'package:ecommerce_store/common/widgets/images/circular_image.dart';
 import 'package:ecommerce_store/common/widgets/texts/brand_title_with_verification_icon.dart';
 import 'package:ecommerce_store/utils/constants/app_colors.dart';
+import 'package:ecommerce_store/utils/constants/app_image.dart';
 import 'package:ecommerce_store/utils/constants/enum.dart';
 import 'package:ecommerce_store/utils/constants/sizes.dart';
 import 'package:ecommerce_store/utils/helpers/helper_function.dart';
@@ -30,7 +30,7 @@ class BrandCard extends StatelessWidget {
           children: [
             Flexible(
               child: CircularImage(
-                image: '',
+                image: AppImages.pumaBrand,
                 isNetworkImage: false,
                 backgroundColor: Colors.transparent,
                 overlayColor: dark ? AppColors.white : AppColors.black,
