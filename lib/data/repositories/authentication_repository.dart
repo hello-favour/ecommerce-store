@@ -32,4 +32,28 @@ class AuthenticationRepository extends GetxController {
             //OnboardingScreen()
             null);
   }
+
+  /*.................Email password sign in....................*/
+
+  //EMAIL AUTHENTICATION SIGNIN
+
+  //EMAIL AUTHENTICATION REGISTER
+
+  //REAUTHENTICATION USER
+
+  //EMAIL VERIFICATION
+
+  //EMAIL AUTHENTICATION FORGOT PASSWORD
+
+  /*.................Federated identity Social sign in....................*/
+
+  //GOOGLE AUTH
+
+  //FACEBOOK AUTH
+
+  /*.................End Federated identity Social sign in....................*/
+
+  //LOGOUT USER
+
+  //DELETE USER: REMOVE USER AUTH AND FIRESTORE ACCOUNT
 }

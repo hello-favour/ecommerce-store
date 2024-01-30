@@ -1,6 +1,7 @@
 import 'package:ecommerce_store/features/shop/screens/all_products/all_products.dart';
 import 'package:ecommerce_store/features/shop/screens/brand/all_brands.dart';
 import 'package:ecommerce_store/features/shop/screens/sub_category/sub_category.dart';
+import 'package:ecommerce_store/utils/constants/app_colors.dart';
 import 'package:ecommerce_store/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
@@ -15,15 +16,14 @@ class MyApp extends StatelessWidget {
       title: 'Ecommerce Store',
       darkTheme: AppTheme.darkTheme,
       theme: AppTheme.lightTheme,
-      home: const AllBrandsScreen(),
-      // const Scaffold(
-      //   backgroundColor: AppColors.primaryColor,
-      //   body: Center(
-      //     child: CircularProgressIndicator(
-      //       color: Colors.white,
-      //     ),
-      //   ),
-      // ),
+      home: const Scaffold(
+        backgroundColor: AppColors.primaryColor,
+        body: Center(
+          child: CircularProgressIndicator(
+            color: Colors.white,
+          ),
+        ),
+      ),
     );
   }
 }
