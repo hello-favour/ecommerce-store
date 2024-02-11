@@ -30,7 +30,6 @@ class SuccessScreen extends StatelessWidget {
               const SizedBox(
                 height: AppSizes.spaceBtwSections,
               ),
-
               //subtitle
               Text(
                 title,
